@@ -1,15 +1,15 @@
 {
   "name": "claude-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Using Claude API via Slack",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "ts-node index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["claude", "slack", "api"],
+  "author": "john.lin",
   "license": "MIT",
   "dependencies": {
     "@slack/web-api": "^6.8.1",
