@@ -6,6 +6,28 @@ Using Claude via Slack
 2. run `yarn` or `npm i`
 3. run `yarn run dev` or `npm run dev`
 
+## How to call API
+
+```bash
+## Conversation
+## prompt: string, streaming: boolean
+## prompt: required, streaming: optional
+curl -X "POST" "http://127.0.0.1:8080/claude/chat" \
+     -H 'Accept: application/json' \
+     -H 'Content-Type: application/json' \
+     -d $'{
+  "prompt": "你可以介绍一下Claude和OpenAI的相同和不同的地方吗？",
+  "streaming": true
+}'
+```
+
+```bash
+## Clear Conversation
+curl -X "POST" "http://127.0.0.1:8080/claude/reset" \
+     -H 'Accept: application/json' \
+     -H 'Content-Type: application/json'
+```
+
 ## How to get `SLACK_AUTH_TOKEN` and `CLAUDE_BOT_ID`
 1.Creat New App at https://api.slack.com/apps
 <div>
