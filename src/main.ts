@@ -34,7 +34,7 @@ app.post<{ Body: ChatBody }>('/claude/chat', async (request, reply) => {
 });
 
 app.post<{ Body: ChatBody }>('/claude/reset', async (request, reply) => {
-  await client.sendMessage("/reset");
+  await client.sendMessage("Please forget the above conversation.");
 
   await handleNonStreamingReply(reply);
 });
